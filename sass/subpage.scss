@@ -1,0 +1,100 @@
+$bluecolor: #0f41af;
+$graycolor : #666666;
+$boxshadow : 0px 0px 2px 0.01px #ccc;
+
+html {
+    font-family: "Noto Sans JP";
+}
+
+main {
+    margin: 0 15%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+// コンテンツ（画面中央）
+.contents {
+    width: 75%;
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    h2{
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    h3{
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 10px;
+
+    }
+
+    .information {
+        margin: 20px auto;
+        padding: 20px 25px;
+        border-radius: 10px;
+        box-shadow: $boxshadow;
+        background-color: #fcfcfc;
+
+        h3 {
+            font-size: 15px;
+            font-weight: 300;
+            color: $graycolor;
+        }
+
+        h2 {
+            font-size: 23px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 2;
+            color: #222222;
+        }
+    }
+}
+
+// サブメニュー（画面右側）
+.submenu {
+    width: 25%;
+
+    nav {
+
+        ul {
+            list-style: none;
+            padding-left: 30px;
+            margin-top: 80px;
+
+            .subspa {
+                list-style: none;
+                padding-left: 20px;
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 2;
+                font-weight: 700;
+
+                &.router-link-exact-active {
+                    span {
+                        &:hover {
+                            color: #000;
+                        }
+                    }
+                }
+
+                span {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                }
+            }
+        }
+    }
+}

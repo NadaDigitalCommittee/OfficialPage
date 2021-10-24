@@ -38,6 +38,10 @@ main {
   font-weight: 500;
 }
 
+.menu nav ul .spa.router-link-exact-active {
+  color: #0f41af;
+}
+
 .menu nav ul .spa.router-link-exact-active span:hover {
   color: #000;
 }
@@ -128,20 +132,23 @@ main {
   margin-top: 80px;
 }
 
-.submenu nav ul .subspa {
+.submenu nav ul li {
   list-style: none;
   padding-left: 20px;
-  text-decoration: none;
   font-size: 14px;
   line-height: 2;
   font-weight: 700;
 }
 
-.submenu nav ul .subspa.router-link-exact-active span:hover {
-  color: #000;
+.submenu nav ul li a {
+  text-decoration: none;
 }
 
-.submenu nav ul .subspa span:hover {
+.submenu nav ul li a:visited {
+  color: inherit;
+}
+
+.submenu nav ul li a:hover {
   text-decoration: underline;
 }
 /*# sourceMappingURL=toppage.css.map */

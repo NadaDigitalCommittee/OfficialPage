@@ -14,7 +14,7 @@ main {
   justify-content: space-between;
 }
 
-// メニュー（画面右側）
+// メニュー（画面左側）
 .menu {
   width: 25%;
 
@@ -35,6 +35,7 @@ main {
         font-weight: 500;
 
         &.router-link-exact-active {
+          color: $bluecolor;
 
           span {
             &:hover {
@@ -126,6 +127,7 @@ main {
   }
 }
 
+// サブメニュー（画面右側）
 .submenu {
   width: 25%;
 
@@ -136,29 +138,23 @@ main {
       padding-left: 30px;
       margin-top: 80px;
 
-      .subspa {
+      li {
         list-style: none;
         padding-left: 20px;
-        text-decoration: none;
         font-size: 14px;
         line-height: 2;
         font-weight: 700;
 
-        &.router-link-exact-active {
+        a {
+          text-decoration: none;
 
-          span {
-            &:hover {
-              color: #000;
-            }
+          &:visited {
+            color: inherit;
           }
 
-        }
-
-        span {
           &:hover {
             text-decoration: underline;
           }
-
         }
       }
     }

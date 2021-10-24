@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../css/toppage.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <script src="../vendor/vue.min.js"></script>
   <script src="../vendor/vue-router.min.js"></script>
@@ -25,8 +25,8 @@
       <nav>
         <ul>
           <router-link tag="li" to="/" class="spa"><span>ホーム</span></router-link>
-          <router-link tag="li" to="/about" class="spa"><span>活動内容</span></router-link>
-          <router-link tag="li" to="/recruit" class="spa"><span>新規委員応募</span></router-link>
+          <router-link tag="li" to="/activity" class="spa"><span>活動内容</span></router-link>
+          <router-link tag="li" to="/order" class="spa"><span>業務委託のご案内</span></router-link>
         </ul>
       </nav>
     </section>
@@ -35,7 +35,22 @@
         <router-view></router-view>
       </transition>
     </section>
-    <section class="submenu"></section>
+    <section class="submenu">
+      <nav>
+        <ul>
+          <li><a href="">新規委員応募</a></li>
+          <li><a href="">組織情報</a></li>
+          <li><a href="">各機関紹介</a></li>
+          <li><a href="">お知らせ</a></li>
+          <li><a href="">コンタクト</a></li>
+          <router-link tag="li" to="/recruit" class="subspa"><span>新規委員応募</span></router-link>
+          <router-link tag="li" to="/about" class="subspa"><span>組織情報</span></router-link>
+          <router-link tag="li" to="/divisions" class="subspa"><span>各機関紹介</span></router-link>
+          <router-link tag="li" to="/news" class="subspa"><span>お知らせ</span></router-link>
+          <router-link tag="li" to="/contact" class="subspa"><span>コンタクト</span></router-link>
+        </ul>
+      </nav>
+    </section>
   </main>
 </body>
 <script src="../scripts/main.js"></script>

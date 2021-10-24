@@ -1,4 +1,6 @@
 $bluecolor: #0f41af;
+$graycolor : #666666;
+$boxshadow : 0px 0px 2px 0.01px #ccc;
 
 html {
   font-family: "Noto Sans JP";
@@ -33,7 +35,6 @@ main {
         font-weight: 500;
 
         &.router-link-exact-active {
-          color: $bluecolor;
 
           span {
             &:hover {
@@ -59,8 +60,8 @@ main {
   width: 50%;
 
   .banner {
-    border-radius: 7px;
-    box-shadow: 0px 0px 2px 0.01px #ccc;
+    border-radius: 10px;
+    box-shadow: $boxshadow;
     padding: 10px;
 
     p {
@@ -79,7 +80,7 @@ main {
         padding: 10px 25px;
         color: #fff;
         background-color: $bluecolor;
-        border-radius: 7px;
+        border-radius: 10px;
         display: block;
         font-weight: 700;
         line-height: 1.5;
@@ -96,8 +97,70 @@ main {
       }
     }
   }
+
+  .information {
+    margin: 20px auto;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: $boxshadow;
+    background-color: #fcfcfc;
+
+    h3 {
+      font-size: 15px;
+      font-weight: 300;
+      color: $graycolor;
+    }
+
+    h2 {
+      font-size: 23px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 2;
+      color: #222222;
+    }
+  }
 }
 
 .submenu {
   width: 25%;
+
+  nav {
+
+    ul {
+      list-style: none;
+      padding-left: 30px;
+      margin-top: 80px;
+
+      .subspa {
+        list-style: none;
+        padding-left: 20px;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 2;
+        font-weight: 700;
+
+        &.router-link-exact-active {
+
+          span {
+            &:hover {
+              color: #000;
+            }
+          }
+
+        }
+
+        span {
+          &:hover {
+            text-decoration: underline;
+          }
+
+        }
+      }
+    }
+  }
 }

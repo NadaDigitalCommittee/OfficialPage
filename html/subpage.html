@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="灘校デジタル委員会の公式ホームページです。" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="../css/subpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="../vendor/vue.min.js"></script>
+    <script src="../vendor/vue-router.min.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <title>灘校デジタル委員会ホームページ</title>
+</head>
+
+<body>
+    <main class="main" id="subapp">
+        <section class="contents">
+            <transition mode="out-in">
+                <router-view></router-view>
+            </transition>
+        </section>
+        <section class="submenu">
+            <nav>
+                <ul>
+                    <router-link tag="li" to="/recruit" class="subspa"><span>新規委員応募</span></router-link>
+                    <router-link tag="li" to="/about" class="subspa"><span>組織情報</span></router-link>
+                    <router-link tag="li" to="/divisions" class="subspa"><span>各機関紹介</span></router-link>
+                    <router-link tag="li" to="/news" class="subspa"><span>お知らせ</span></router-link>
+                    <router-link tag="li" to="/contact" class="subspa"><span>コンタクト</span></router-link>
+                </ul>
+            </nav>
+        </section>
+    </main>
+</body>
+<script src="../scripts/main.js"></script>
+<style>
+    .v-enter-active,
+    .v-leave-active {
+        transition: opacity .3s;
+    }
+
+    .v-enter,
+    .v-leave-to {
+        opacity: 0;
+    }
+</style>
+
+</html>

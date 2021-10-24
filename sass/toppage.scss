@@ -20,14 +20,11 @@ main {
     ul {
       list-style: none;
       padding-left: 0;
-      a {
+      .spa {
         text-decoration: none;
         font-size: 16px;
         line-height: 3;
         font-weight: 500;
-        &:visited {
-          color: inherit;
-        }
       }
     }
   }
@@ -65,7 +62,6 @@ main {
           font-family: "Material Icons";
           position: absolute;
           right: 20px;
-
         }
       }
     }

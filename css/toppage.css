@@ -1,0 +1,92 @@
+html {
+  font-family: "Noto Sans JP";
+}
+
+main {
+  margin: 0 15%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu {
+  width: 25%;
+}
+
+.menu h1 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.menu nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu nav ul a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 3;
+  font-weight: 500;
+}
+
+.menu nav ul a:visited {
+  color: inherit;
+}
+
+.contents {
+  width: 50%;
+}
+
+.contents .banner {
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 2px 0.01px #ccc;
+          box-shadow: 0px 0px 2px 0.01px #ccc;
+  padding: 10px;
+}
+
+.contents .banner p {
+  padding: 10px 25px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.contents .banner .linkbox {
+  width: 94%;
+  margin: 10px 3%;
+}
+
+.contents .banner .linkbox a {
+  padding: 10px 25px;
+  color: #fff;
+  background-color: #0f41af;
+  border-radius: 7px;
+  display: block;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+}
+
+.contents .banner .linkbox a::after {
+  content: "\e5e1";
+  font-family: "Material Icons";
+  position: absolute;
+  right: 20px;
+}
+
+.submenu {
+  width: 25%;
+}
+/*# sourceMappingURL=toppage.css.map */

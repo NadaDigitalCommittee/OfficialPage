@@ -38,6 +38,18 @@ main {
   font-weight: 500;
 }
 
+.menu nav ul .spa.router-link-active {
+  color: #0f41af;
+}
+
+.menu nav ul .spa.router-link-active span:hover {
+  color: #000;
+}
+
+.menu nav ul .spa span:hover {
+  text-decoration: underline;
+}
+
 .contents {
   width: 50%;
 }

@@ -24,24 +24,31 @@
       <h1 class="logo">デジタル委員会</h1>
       <nav>
         <ul>
-          <router-link tag="li" to="/toppage" class="spa">ホーム</router-link>
-          <router-link tag="li" to="/page2" class="spa">活動内容</router-link>
-          <router-link tag="li" to="/page2" class="spa">新規委員応募</router-link>
+          <router-link tag="li" to="/toppage" class="spa"><span>ホーム</span></router-link>
+          <router-link tag="li" to="/about" class="spa"><span>活動内容</span></router-link>
+          <router-link tag="li" to="/recruit" class="spa"><span>新規委員応募</span></router-link>
         </ul>
       </nav>
     </section>
     <section class="contents">
-      <router-view></router-view>
-      <!-- <div class="banner">
-          <p>デジタル委員会　新規委員募集中</p>
-          <div class="linkbox">
-            <a href="">応募はこちら</a>
-          </div>
-        </div> -->
+      <transition mode="out-in">
+        <router-view></router-view>
+      </transition>
     </section>
     <section class="submenu"></section>
   </main>
 </body>
 <script src="../scripts/main.js"></script>
+<style>
+  .v-enter-active,
+  .v-leave-active {
+    transition: opacity .3s;
+  }
+
+  .v-enter,
+  .v-leave-to {
+    opacity: 0;
+  }
+</style>
 
 </html>

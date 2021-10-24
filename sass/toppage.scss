@@ -1,7 +1,9 @@
 $bluecolor: #0f41af;
+
 html {
   font-family: "Noto Sans JP";
 }
+
 main {
   margin: 0 15%;
   margin-top: 50px;
@@ -9,33 +11,58 @@ main {
   flex-direction: row;
   justify-content: space-between;
 }
+
 // メニュー（画面右側）
 .menu {
   width: 25%;
+
   h1 {
     font-size: 30px;
     margin-bottom: 40px;
   }
+
   nav {
     ul {
       list-style: none;
       padding-left: 0;
+
       .spa {
         text-decoration: none;
         font-size: 16px;
         line-height: 3;
         font-weight: 500;
+
+        &.router-link-active {
+          color: $bluecolor;
+
+          span {
+            &:hover {
+              color: #000;
+            }
+          }
+
+        }
+
+        span {
+          &:hover {
+            text-decoration: underline;
+          }
+
+        }
       }
     }
   }
 }
+
 // コンテンツ（画面中央）
 .contents {
   width: 50%;
+
   .banner {
     border-radius: 7px;
     box-shadow: 0px 0px 2px 0.01px #ccc;
     padding: 10px;
+
     p {
       padding: 10px 25px;
       font-weight: 700;
@@ -43,9 +70,11 @@ main {
       text-decoration: none;
       font-size: 25px;
     }
+
     .linkbox {
       width: 94%;
       margin: 10px 3%;
+
       a {
         padding: 10px 25px;
         color: #fff;
@@ -57,6 +86,7 @@ main {
         text-decoration: none;
         font-size: 20px;
         position: relative;
+
         &::after {
           content: "\e5e1";
           font-family: "Material Icons";
@@ -67,6 +97,7 @@ main {
     }
   }
 }
+
 .submenu {
   width: 25%;
 }

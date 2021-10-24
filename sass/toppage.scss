@@ -32,7 +32,7 @@ main {
         line-height: 3;
         font-weight: 500;
 
-        &.router-link-active {
+        &.router-link-exact-active {
           color: $bluecolor;
 
           span {

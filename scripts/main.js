@@ -5,10 +5,6 @@ const router = new VueRouter({
       component: httpVueLoader("../html/toppage.vue")
     },
     {
-      path: "/toppage",
-      component: httpVueLoader("../html/toppage.vue")
-    },
-    {
       path: "/about",
       component: httpVueLoader("../html/about.vue")
     },

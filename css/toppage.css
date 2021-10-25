@@ -21,9 +21,10 @@ main {
   width: 25%;
 }
 
-.menu h1 {
-  font-size: 30px;
+.menu .logo {
   margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .menu nav ul {

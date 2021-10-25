@@ -21,20 +21,37 @@ main {
   width: 75%;
 }
 
-.contents h1 {
+.contents .logo {
   font-size: 30px;
   margin-bottom: 40px;
+  text-decoration: none;
+  font-weight: 700;
+  display: block;
+}
+
+.contents .logo:visited {
+  color: inherit;
 }
 
 .contents h2 {
   font-size: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-.contents h3 {
+.contents .wrapper {
+  margin-bottom: 50px;
+}
+
+.contents .wrapper h3 {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 10px;
+}
+
+.contents .wrapper p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
 }
 
 .contents .information {

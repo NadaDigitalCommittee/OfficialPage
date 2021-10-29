@@ -12,7 +12,9 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  min-width: 1000px;
 }
+
 
 // メニュー（画面左側）
 .menu {
@@ -89,6 +91,7 @@ main {
         text-decoration: none;
         font-size: 20px;
         position: relative;
+        z-index: 10;
 
         &::after {
           content: "\e5e1";
@@ -160,5 +163,27 @@ main {
         }
       }
     }
+  }
+}
+
+@media(max-width:1000px) {
+  main {
+    flex-direction: column;
+    margin: 5%;
+    min-width: 0;
+  }
+
+
+  .menu {
+    display: none;
+  }
+
+  .contents {
+    width: 100%;
+    margin-top: 30%;
+  }
+
+  .submenu {
+    display: none;
   }
 }

@@ -15,6 +15,7 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  min-width: 1000px;
 }
 
 .menu {
@@ -86,6 +87,7 @@ main {
   text-decoration: none;
   font-size: 20px;
   position: relative;
+  z-index: 10;
 }
 
 .contents .banner .linkbox a::after {
@@ -152,5 +154,26 @@ main {
 
 .submenu nav ul li a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5%;
+    min-width: 0;
+  }
+  .menu {
+    display: none;
+  }
+  .contents {
+    width: 100%;
+    margin-top: 30%;
+  }
+  .submenu {
+    display: none;
+  }
 }
 /*# sourceMappingURL=toppage.css.map */

@@ -109,4 +109,25 @@ main {
 .submenu nav ul .subspa span:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 1000px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5%;
+    min-width: 0;
+  }
+  .contents {
+    width: 100%;
+    margin-top: 30%;
+  }
+  .contents .logo {
+    display: none;
+  }
+  .submenu {
+    display: none;
+  }
+}
 /*# sourceMappingURL=subpage.css.map */

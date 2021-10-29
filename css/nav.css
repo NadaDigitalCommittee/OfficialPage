@@ -1,0 +1,123 @@
+.responsivemenu {
+  position: fixed;
+  display: none;
+  background-color: #fff;
+  width: 100vw;
+  top: 0;
+  padding: 20px;
+  padding-left: 5%;
+  margin-left: -5%;
+  z-index: 100;
+}
+
+.responsivemenu .logo {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-weight: 700;
+  display: block;
+  color: black;
+}
+
+.responsivemenu .logo:visited {
+  color: inherit;
+}
+
+.responsivemenu .menu-trigger,
+.responsivemenu .menu-trigger span {
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.responsivemenu .menu-trigger {
+  position: fixed;
+  width: 25px;
+  height: 14px;
+  background: none;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  right: 5vw;
+  top: 4%;
+}
+
+.responsivemenu .menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: .5px;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+.responsivemenu .menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+
+.responsivemenu .menu-trigger span:nth-of-type(2) {
+  top: 7px;
+}
+
+.responsivemenu .menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+.responsivemenu .menu-trigger.active span:nth-of-type(1) {
+  -webkit-transform: translateY(6.5px) rotate(-45deg);
+          transform: translateY(6.5px) rotate(-45deg);
+}
+
+.responsivemenu .menu-trigger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.responsivemenu .menu-trigger.active span:nth-of-type(3) {
+  -webkit-transform: translateY(-6.5px) rotate(45deg);
+          transform: translateY(-6.5px) rotate(45deg);
+}
+
+.hidemenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  opacity: 0;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+  z-index: 0;
+}
+
+.hidemenu.is-active {
+  opacity: 100;
+  z-index: 99;
+}
+
+@media (max-width: 1000px) {
+  .responsivemenu {
+    display: block;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

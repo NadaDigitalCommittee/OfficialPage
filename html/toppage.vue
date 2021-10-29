@@ -3,7 +3,7 @@
     <div class="banner">
       <p>デジタル委員会　新規委員募集中</p>
       <div class="linkbox">
-        <a href="">応募はこちら</a>
+        <a href="subpage.html#/recruit">応募はこちら</a>
       </div>
     </div>
     <div class="information">

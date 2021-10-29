@@ -14,6 +14,7 @@ main {
     justify-content: space-between;
 }
 
+
 // コンテンツ（画面中央）
 .contents {
     width: 75%;
@@ -117,5 +118,26 @@ main {
                 }
             }
         }
+    }
+}
+
+@media(max-width:1000px) {
+    main {
+        flex-direction: column;
+        margin: 5%;
+        min-width: 0;
+    }
+
+    .contents {
+        width: 100%;
+        margin-top: 30%;
+
+        .logo {
+            display: none;
+        }
+    }
+
+    .submenu {
+        display: none;
     }
 }

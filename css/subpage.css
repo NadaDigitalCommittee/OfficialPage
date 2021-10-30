@@ -130,6 +130,12 @@ main {
   .contents .logo {
     display: none;
   }
+  .contents h2 {
+    font-size: 32px;
+  }
+  .contents .wrapper h3 {
+    font-size: 24px;
+  }
   .submenu {
     display: none;
   }

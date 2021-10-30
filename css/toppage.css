@@ -178,6 +178,9 @@ main {
     width: 100%;
     margin-top: 30%;
   }
+  .contents h2 {
+    font-size: 32px;
+  }
   .submenu {
     display: none;
   }

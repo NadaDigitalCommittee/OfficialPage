@@ -20,6 +20,8 @@ main {
 
 .menu {
   width: 25%;
+  position: relative;
+  z-index: 10;
 }
 
 .menu .logo {
@@ -54,6 +56,8 @@ main {
 
 .contents {
   width: 50%;
+  position: relative;
+  z-index: 10;
 }
 
 .contents .banner {
@@ -127,6 +131,8 @@ main {
 
 .submenu {
   width: 25%;
+  position: relative;
+  z-index: 10;
 }
 
 .submenu nav ul {

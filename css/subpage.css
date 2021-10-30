@@ -19,6 +19,8 @@ main {
 
 .contents {
   width: 75%;
+  position: relative;
+  z-index: 10;
 }
 
 .contents .logo {
@@ -85,6 +87,8 @@ main {
 
 .submenu {
   width: 25%;
+  position: relative;
+  z-index: 10;
 }
 
 .submenu nav ul {

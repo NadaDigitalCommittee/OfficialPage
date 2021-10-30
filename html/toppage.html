@@ -34,17 +34,17 @@
     <!-- スマホ用フルスクリーンナビゲーション -->
     <section class="hidemenu" v-bind:class="{'is-active' : open }">
       <nav>
-        <ul>
-          <router-link tag="li" to="/" class="spa" v-on:click.native="open=!open"><span>ホーム</span></router-link>
-          <router-link tag="li" to="/activity" class="spa" v-on:click.native="open=!open"><span>活動内容</span></router-link>
-          <router-link tag="li" to="/order" class="spa" v-on:click.native="open=!open"><span>業務委託のご案内</span></router-link>
+        <ul class="bigs">
+          <router-link tag="li" to="/" class="spa big" v-on:click.native="open=!open"><span>ホーム</span></router-link>
+          <router-link tag="li" to="/activity" class="spa big" v-on:click.native="open=!open"><span>活動内容</span></router-link>
+          <router-link tag="li" to="/order" class="spa big" v-on:click.native="open=!open"><span>業務委託のご案内</span></router-link>
         </ul>
-        <ul>
-          <li><a href="subpage.html#/recruit">新規委員応募</a></li>
-          <li><a href="subpage.html#/about">組織情報</a></li>
-          <li><a href="subpage.html#/divisions">各機関紹介</a></li>
-          <li><a href="subpage.html#/news">お知らせ</a></li>
-          <li><a href="subpage.html#/contact">コンタクト</a></li>
+        <ul class="smalls">
+          <li class="small"><a href="subpage.html#/recruit">新規委員応募</a></li>
+          <li class="small"><a href="subpage.html#/about">組織情報</a></li>
+          <li class="small"><a href="subpage.html#/divisions">各機関紹介</a></li>
+          <li class="small"><a href="subpage.html#/news">お知らせ</a></li>
+          <li class="small"><a href="subpage.html#/contact">コンタクト</a></li>
         </ul>
       </nav>
     </section>

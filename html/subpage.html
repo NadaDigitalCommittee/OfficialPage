@@ -34,18 +34,18 @@
         <!-- スマホ用フルスクリーンナビゲーション -->
         <section class="hidemenu" v-bind:class="{'is-active' : open }">
             <nav>
-                <ul>
-                    <li><a href="toppage.html">ホーム</a></li>
-                    <li><a href="toppage.html#/activity">活動内容</a></li>
-                    <li><a href="toppage.html#/order">業務委託のご案内</a></li>
+                <ul class="bigs">
+                    <li class="big"><a href="toppage.html">ホーム</a></li>
+                    <li class="big"><a href="toppage.html#/activity">活動内容</a></li>
+                    <li class="big"><a href="toppage.html#/order">業務委託のご案内</a></li>
 
                 </ul>
-                <ul>
-                    <router-link tag="li" to="/recruit" class="subspa" v-on:click.native="open=!open"><span>新規委員応募</span></router-link>
-                    <router-link tag="li" to="/about" class="subspa" v-on:click.native="open=!open"><span>組織情報</span></router-link>
-                    <router-link tag="li" to="/divisions" class="subspa" v-on:click.native="open=!open"><span>各機関紹介</span></router-link>
-                    <router-link tag="li" to="/news" class="subspa" v-on:click.native="open=!open"><span>お知らせ</span></router-link>
-                    <router-link tag="li" to="/contact" class="subspa" v-on:click.native="open=!open"><span>コンタクト</span></router-link>
+                <ul class="smalls">
+                    <router-link tag="li" to="/recruit" class="subspa small" v-on:click.native="open=!open"><span>新規委員応募</span></router-link>
+                    <router-link tag="li" to="/about" class="subspa small" v-on:click.native="open=!open"><span>組織情報</span></router-link>
+                    <router-link tag="li" to="/divisions" class="subspa small" v-on:click.native="open=!open"><span>各機関紹介</span></router-link>
+                    <router-link tag="li" to="/news" class="subspa small" v-on:click.native="open=!open"><span>お知らせ</span></router-link>
+                    <router-link tag="li" to="/contact" class="subspa small" v-on:click.native="open=!open"><span>コンタクト</span></router-link>
                 </ul>
             </nav>
         </section>

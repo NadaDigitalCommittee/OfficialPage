@@ -18,6 +18,8 @@ main {
 // コンテンツ（画面中央）
 .contents {
     width: 75%;
+    position: relative;
+    z-index: 10;
 
     .logo {
         font-size: 30px;
@@ -86,6 +88,8 @@ main {
 // サブメニュー（画面右側）
 .submenu {
     width: 25%;
+    position: relative;
+    z-index: 10;
 
     nav {
 

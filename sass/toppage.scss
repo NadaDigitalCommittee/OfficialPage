@@ -19,6 +19,8 @@ main {
 // メニュー（画面左側）
 .menu {
   width: 25%;
+  position: relative;
+  z-index: 10;
 
   .logo {
     margin-bottom: 40px;
@@ -62,6 +64,8 @@ main {
 // コンテンツ（画面中央）
 .contents {
   width: 50%;
+  position: relative;
+  z-index: 10;
 
   .banner {
     border-radius: 10px;
@@ -134,6 +138,8 @@ main {
 // サブメニュー（画面右側）
 .submenu {
   width: 25%;
+  position: relative;
+  z-index: 10;
 
   nav {
 

@@ -84,19 +84,17 @@
 }
 
 .hidemenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   position: fixed;
   top: 0;
   right: 0;
@@ -107,12 +105,59 @@
   opacity: 0;
   -webkit-transition: opacity 300ms;
   transition: opacity 300ms;
-  z-index: 0;
+  z-index: 9;
 }
 
 .hidemenu.is-active {
   opacity: 100;
   z-index: 99;
+}
+
+.hidemenu nav {
+  margin-top: 25%;
+  margin-left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hidemenu nav .bigs {
+  margin-bottom: 24px;
+}
+
+.hidemenu nav .bigs .big {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hidemenu nav .bigs .big a {
+  text-decoration: none;
+}
+
+.hidemenu nav .bigs .big a:visited {
+  color: inherit;
+}
+
+.hidemenu nav .smalls .small {
+  color: #000;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hidemenu nav .smalls .small a {
+  text-decoration: none;
+}
+
+.hidemenu nav .smalls .small a:visited {
+  color: inherit;
 }
 
 @media (max-width: 1000px) {

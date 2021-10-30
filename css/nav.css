@@ -85,6 +85,7 @@
 
 .hidemenu {
   display: block;
+  visibility: hidden;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -111,6 +112,7 @@
 .hidemenu.is-active {
   opacity: 100;
   z-index: 99;
+  visibility: visible;
 }
 
 .hidemenu nav {

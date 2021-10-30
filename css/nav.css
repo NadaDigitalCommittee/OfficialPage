@@ -137,6 +137,7 @@
 }
 
 .hidemenu nav .bigs .big a {
+  color: #000;
   text-decoration: none;
 }
 
@@ -145,7 +146,6 @@
 }
 
 .hidemenu nav .smalls .small {
-  color: #000;
   list-style: none;
   font-size: 14px;
   font-weight: 700;
@@ -153,6 +153,7 @@
 }
 
 .hidemenu nav .smalls .small a {
+  color: #000;
   text-decoration: none;
 }
 

@@ -6,7 +6,7 @@
       <p>
         harady
       </p>
-      <p>かかかかか、ええええええええええええええええええええ、うん。</p>
+      <p>ニトリはシスコンです</p>
     </div>
     <div class="wrapper"><h3>動画課</h3></div>
     <div class="wrapper"><h3>デザイン課</h3></div>

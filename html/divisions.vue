@@ -6,7 +6,7 @@
       <p>
         harady
       </p>
-      <p>ニトリはシスコンです</p>
+      <p>ニトリはシスコンです２</p>
     </div>
     <div class="wrapper"><h3>動画課</h3></div>
     <div class="wrapper"><h3>デザイン課</h3></div>

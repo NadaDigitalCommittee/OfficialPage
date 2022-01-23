@@ -1,0 +1,91 @@
+$bluecolor: #0f41af;
+$graycolor : #666666;
+$boxshadow : 0px 0px 2px 0.01px #ccc;
+
+html {
+  font-family: "Noto Sans JP";
+}
+
+main {
+  margin: 0 15%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 1000px;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 300;
+  color: $graycolor;
+}
+
+h2 {
+  font-size: 23px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2;
+  color: #222222;
+}
+
+// ページ遷移
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity .4s;
+}
+
+.layout-enter,
+.layout-leave-active {
+  opacity: 0;
+}
+
+.layout-enter-active,
+.layout-leave-active {
+  transition: opacity .4s;
+}
+
+
+@media(max-width:1000px) {
+  main {
+    .menu {
+      display: none;
+    }
+
+    .submenu {
+      display: none;
+    }
+
+    flex-direction: column;
+    margin: 5%;
+    min-width: 0;
+
+    .contents {
+      width: 100%;
+      margin-top: 30%;
+    }
+
+    .content {
+      width: 100%;
+      margin-top: 30%;
+    }
+
+    .hidelogo {
+      display: none;
+    }
+  }
+
+
+
+}

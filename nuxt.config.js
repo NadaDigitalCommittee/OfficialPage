@@ -50,12 +50,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-  env: {
-    CTF_SPACE_ID,
-    CTF_CDA_ACCESS_TOKEN,
-  },
   router: {
-    base: '/newOfficialPage/',
+    base: '/OfficialPage/',
   },
   generate: {
     dir: 'docs',

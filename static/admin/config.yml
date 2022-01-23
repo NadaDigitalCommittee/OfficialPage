@@ -1,12 +1,12 @@
 backend:
-	  name: git-gateway
-	  branch: master
+name: git-gateway
+branch: master
 
-	locale: 'ja'
-	media_folder: static/img
-	public_folder: /img
+locale: 'ja'
+media_folder: static/img
+public_folder: /img
 	
-	collections:
+collections:
 	  - name: 'blog'
 	    identifier_field: slug
 	    label: 'ブログ'

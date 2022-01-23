@@ -1,25 +1,22 @@
 backend:
-name: git-gateway
-branch: master
+  name: git-gateway
+  branch: master
 
 locale: 'ja'
+publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
-	
+
 collections:
-	  - name: 'blog'
-	    identifier_field: slug
-	    label: 'ブログ'
-	    format: 'json'
-	    folder: 'assets/content/blog'
-	    create: true
-	    slug: '{{slug}}'
-	    editor:
-	      preview: false
-	    fields:
-	      - { label: 'タイトル', name: 'title', widget: 'string' }
-	      - { label: '説明', name: 'description', widget: 'string' }
-	      - { label: 'スラッグ', name: 'slug', widget: 'string' }
-	      - { label: '作成日', name: 'createDate', widget: 'datetime', format: 'YYYY-MM-DD HH:mm:ss' }
-	      - { label: '更新日', name: 'updateDate', widget: 'datetime', format: 'YYYY-MM-DD HH:mm:ss' }
-	      - { label: '本文', name: 'body', widget: 'markdown' }
+  - name: 'blog' # Used in routes, e.g., /admin/collections/blog
+    label: 'ブログ' # Used in the UI
+    folder: 'assets/content/blog' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
+      - { label: 'Rating (scale of 1-5)', name: 'rating', widget: 'number' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }

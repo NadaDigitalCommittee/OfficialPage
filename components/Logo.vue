@@ -11,5 +11,6 @@ export default {}
   font-weight: 700;
   display: block;
   color: black;
+  cursor: pointer;
 }
 </style>

@@ -36,6 +36,7 @@ export default {}
         font-weight: 700;
         text-decoration: none;
         color: black;
+        cursor: pointer;
 
         &:hover {
           text-decoration: underline;

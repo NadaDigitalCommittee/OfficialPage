@@ -4,7 +4,7 @@
     <Phonenav />
     <section class="contents">
       <h2>活動内容</h2>
-      <p>something</p>
+      <p>デジタル</p>
     </section>
     <Subnav />
   </main>

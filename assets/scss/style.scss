@@ -28,7 +28,7 @@ h2 {
 }
 
 p {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 2;
   color: #222222;
@@ -43,7 +43,7 @@ p {
 
 .page-enter-active,
 .page-leave-active {
-  transition: opacity .4s;
+  transition: opacity .3s;
 }
 
 .layout-enter,
@@ -53,7 +53,7 @@ p {
 
 .layout-enter-active,
 .layout-leave-active {
-  transition: opacity .4s;
+  transition: opacity .3s;
 }
 
 

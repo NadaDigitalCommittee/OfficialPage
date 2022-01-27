@@ -78,6 +78,7 @@ export default {
   display: none; //PCでは非表示
   background-color: #fff;
   width: 100vw;
+  height: 5em;
   top: 0;
   padding: 20px;
   padding-left: 5%;

@@ -12,6 +12,9 @@
         </div>
       </div>
       <h2>業務委託のご案内</h2>
+      <h4 style="font-size: 20px; margin-bottom: 20px">
+        ※現在すぐにご依頼に対応できるかは不明です
+      </h4>
       <p>
         デジタル委員会では、部活動や同好会、サークルなどのHPを作成する業務の委託を承っております。
       </p>
@@ -32,9 +35,9 @@
       </p>
       <iframe
         id="form"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSehQipuNuvamnm9EjUDY_AwP1jn5faGKJNsuO8tdmZt5SSGeQ/viewform?embedded=true"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSehcs7K2QT8ckJB2CiegrEycrbD0DxfH4PSB8fqe7r2Izilgw/viewform?embedded=true"
         width="100%"
-        height="1200"
+        height="1300"
         frameborder="0"
         marginheight="0"
         marginwidth="0"

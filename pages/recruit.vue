@@ -5,7 +5,7 @@
       <Logo />
       <h2>新規委員応募</h2>
       <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSeGHqRdQttPHsXAD_Ph4q-_xm112vpDxt7kl5tkHquFruc4yw/viewform?embedded=true"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSf60pPP3-2QMGDXHE5gS_4lzN3gTlQhtD5Fe8GQriB6APGSeA/viewform?embedded=true"
         width="100%"
         height="1800"
         frameborder="0"

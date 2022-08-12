@@ -1,7 +1,6 @@
 import Head from "next/head";
 import type { FC, ReactNode } from "react";
 import { Header } from "./header";
-import { Footer } from "./footer";
 
 interface LayoutProps {
 	title?: string;
@@ -19,11 +18,11 @@ export const Layout: FC<LayoutProps> = ({
 			<Head>
 				<title>{title}</title>
 				<meta name="description" content={description} />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			</Head>
 			<main>
 				<Header />
 				{children}
-				<Footer />
 			</main>
 		</>
 	);

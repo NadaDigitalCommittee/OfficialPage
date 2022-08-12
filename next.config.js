@@ -1,7 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
+const withMDX = require("@next/mdx")({});
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = withMDX({
+	pageExtensions: ["tsx", "mdx"],
+	reactStrictMode: true,
+	swcMinify: true,
+});
+
+module.exports = nextConfig;

@@ -4,12 +4,17 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write \"(components|pages)/**/**.tsx\""
   },
   "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mdx-js/loader": "^2.1.2",
+    "@mui/material": "^5.10.0",
+    "@next/mdx": "^12.2.4",
     "next": "12.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"

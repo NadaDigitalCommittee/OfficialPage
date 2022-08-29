@@ -6,13 +6,13 @@ import { RightArrow } from "./rightarrow";
 import NextLink from "next/link";
 const images = [
 	{
-		bg: "8",
+		bg: "6.png",
 		text: "デジタル業務に強くない方でも大歓迎ですので気軽にご応募ください！",
 		href: "/recruit",
 		overtext: "委員応募",
 	},
 	{
-		bg: "9",
+		bg: "7.jpg",
 		text: "クラブや同好会、サークルなどのHP作成の委託等を承っています。",
 		href: "/recruit",
 		overtext: "業務委託",
@@ -115,14 +115,19 @@ const RecruitImgRender: FC<RecuruitProps> = ({ bg, text, href, overtext }) => {
 			width="30%"
 			mx="3rem"
 			sx={{
-				backgroundImage: `url(/images/${bg}.png)`,
+				backgroundImage: `url(/images/${bg})`,
 				backgroundPosition: "center",
 				backgroundSize: "cover",
 				borderRadius: "20%",
 			}}
 		>
 			<Box my="4.5rem" mx="3rem" textAlign="center">
-				<Typography variant="h5" color="white" mb="4.2rem">
+				<Typography
+					variant="h5"
+					color="white"
+					mb="4.2rem"
+					fontFamily="urw-din, sans-serif"
+				>
 					{text}
 				</Typography>
 				<NextLink href={href} passHref>
@@ -143,8 +148,9 @@ const RecruitImgRender: FC<RecuruitProps> = ({ bg, text, href, overtext }) => {
 								pr: "2rem",
 							},
 							fontSize: "1.44rem",
-							fontWeight: "500",
+							fontWeight: "550",
 							transition: "padding-right 0.5s ease-in-out",
+							fontFamily: "urw-din, sans-serif",
 						}}
 					>
 						{overtext}

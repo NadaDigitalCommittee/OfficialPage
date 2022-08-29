@@ -8,6 +8,7 @@ const articles = new Array(4).fill({
 	timestamp: Date.now(),
 	title: "適当なタイトル適当なタイトル適当な",
 });
+import { NewsList } from "../newslist";
 
 export const News: FC = () => {
 	return (
@@ -66,60 +67,7 @@ export const News: FC = () => {
 				</Box>
 				<Box height="100%" flexGrow="1" display="flex" alignItems="center">
 					<Box mb="2rem" mt="6rem">
-						{articles.map((a, i) => {
-							return (
-								<NextLink key={i} href={`/${a.timestamp}`} passHref>
-									<Box
-										display="flex"
-										alignItems="center"
-										py="1.2rem"
-										sx={{
-											borderTopWidth: "1px",
-											borderBottomWidth: "1px",
-											borderColor: "white",
-											borderTopStyle: "solid",
-											borderBottomStyle: "solid",
-											cursor: "pointer",
-										}}
-									>
-										<Typography
-											bgcolor="white"
-											color="#00213B"
-											borderRadius="50%"
-											boxSizing="border-box"
-											width="4.8rem"
-											height="4.8rem"
-											display="flex"
-											alignItems="center"
-											justifyContent="center"
-										>
-											{(() => {
-												const d = new Date(a.timestamp);
-												return (
-													<>
-														{d.getFullYear()}
-														<br />
-														{d.getMonth()}.{d.getDay()}
-													</>
-												);
-											})()}
-										</Typography>
-										<Typography
-											variant="h6"
-											component="h2"
-											fontFamily="urw-din, sans-serif"
-											fontWeight="500"
-											fontSize="1.2rem"
-											pr="10rem"
-											pl="2rem"
-											color="white"
-										>
-											{a.title}
-										</Typography>
-									</Box>
-								</NextLink>
-							);
-						})}
+						<NewsList articles={articles} reverse={true} />
 					</Box>
 				</Box>
 			</Box>

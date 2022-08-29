@@ -100,29 +100,31 @@ export const Header: FC = () => {
 							pt="7px"
 						>
 							<NextLink href="/" passHref>
-								<>
-									<Typography
-										noWrap
-										component="a"
-										variant="h5"
-										color="default"
-										lineHeight="100%"
-										fontWeight="bold"
-									>
-										灘校デジタル委員会
-									</Typography>
-									<Typography
-										noWrap
-										component="a"
-										variant="body2"
-										color="default"
-										fontFamily="urw-din, sans-serif"
-										fontWeight="demi"
-										fontSize="12px"
-									>
-										DIGITAL COMMITTEE
-									</Typography>
-								</>
+								<Typography
+									noWrap
+									component="a"
+									variant="h5"
+									color="default"
+									lineHeight="100%"
+									fontWeight="bold"
+									sx={{ textDecoration: "none", color: "#00213B" }}
+								>
+									灘校デジタル委員会
+								</Typography>
+							</NextLink>
+							<NextLink href="/" passHref>
+								<Typography
+									noWrap
+									component="a"
+									variant="body2"
+									color="default"
+									fontFamily="urw-din, sans-serif"
+									fontWeight="demi"
+									fontSize="12px"
+									sx={{ textDecoration: "none", color: "#00213B" }}
+								>
+									DIGITAL COMMITTEE
+								</Typography>
 							</NextLink>
 						</Box>
 
@@ -152,7 +154,7 @@ const NavButton: FC<Props> = (item) => {
 				sx={{
 					display: "flex",
 					fontSize: 15,
-					px: hovered ? 1.8 : item.isExternal ? 2 : 1,
+					px: hovered ? 1.8 : item.isExternal ? 2 : 1.8,
 					py: 1,
 					mx: 1,
 					color: item.isExternal ? "#fff" : "#00213B",

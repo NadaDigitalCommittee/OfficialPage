@@ -7,7 +7,7 @@ import { useState, type FC } from "react";
 
 SwiperCore.use([Pagination, Autoplay]);
 
-const images = ["1", "2", "3"];
+const images = ["1", "2"];
 
 export const Carousel: FC = () => {
 	const [current, setCurrent] = useState(0);
@@ -32,21 +32,18 @@ export const Carousel: FC = () => {
 						<SwiperSlide
 							key={i}
 							style={{
-								display: "flex",
-								alignItems: "center",
-								marginTop: "auto",
-								marginBottom: "auto",
 								height: "480px",
-								width: "720px",
+								display: "flex",
 								justifyContent: "center",
+								alignItems: "center",
+								position: "relative",
 							}}
 						>
 							<Image
 								src={`/images/${src}.png`}
-								width={current === i ? 600 : 480}
-								height={current === i ? 400 : 320}
 								alt="top-image"
-								style={{ transition: "width 2000ms ease-in-out" }}
+								width={current === i ? "600px" : "480px"}
+								height={current === i ? "400px" : "320px"}
 							/>
 						</SwiperSlide>
 					);
